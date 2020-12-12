@@ -1,0 +1,165 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;}
+
+h2 {
+  font-size: 16px;
+}
+
+* {
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+p {
+  font-size: 12px;
+  width: 50%;
+}
+
+/* header */
+.header {
+  width: 100vw;
+  padding: 40px;
+  background-image: url(/images/geo-1.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-h1 {
+  margin: 0 0 5px;
+  text-align: center;
+}
+.header-p { width: 50%; }
+.header-btn {
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-color: #8c8c8c;
+  box-shadow: 0 0 10px #8c8c8c;
+}
+.header-btn:hover {
+  width: 110px;
+  height: 50px;
+}
+
+/* body */
+.body-1, .body-2 {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid white;
+  background-color: #b0b0b0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body-1-p, .body-2-p {
+  display: flex;
+  width: 50%;
+  text-align: center;
+}
+.body-1-p-content { margin: 10px; }
+
+.contact-rad {
+  display: flex;
+}
+.contact, .rad {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  flex-basis: 50%;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+.email { font-size: 12px; }
+.contact { background-color: #747474; }
+.rad { background-color: #e5e5e5; }
+
+/* cards */
+.card-container {
+  width: 100vw;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.card {
+  border-radius: 6px;
+  background-color: #b0b0b0;
+  height: 100%;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+.card-img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 100px;
+} 
+.card-3 .card-img { 
+  background-color: black; 
+  border-bottom: 1px solid white;
+}
+.card-description {
+  width: 100%;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+}
+.footer-h4 {
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+.footer-link {
+  color: rgb(0, 102, 255);
+  font-weight: 100;
+}
+.footer-left, .footer-right {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+
+/* media queries */
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    height: 100%;
+    max-width: 300px;
+    width: 100%;
+  }
+  .body-1-p {
+    width: 100%;
+  }
+}
